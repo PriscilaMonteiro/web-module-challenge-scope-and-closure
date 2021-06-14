@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned. In other words, it is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -51,6 +53,7 @@ function personalDice(name){
       // generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
     console.log(`${name} rolled a ${newRoll}`)
+    debugger
   }
 }
 
@@ -63,9 +66,11 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? 
+It is when the inner function access the parameter name.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+ Everytime  you call function the dice rolls randomly generating a new number between 1 and 6.
+c. What is the lexical scope of `newRoll`? lexical scope === belonging (where was I created)
 
 
 ### Task 3 - Stretch Goals
