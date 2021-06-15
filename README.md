@@ -53,7 +53,6 @@ function personalDice(name){
       // generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
     console.log(`${name} rolled a ${newRoll}`)
-    debugger
   }
 }
 
@@ -67,10 +66,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell? 
-It is when the inner function access the parameter name.
+The closure happens when  the inner function access the parameter name.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
- Everytime  you call function the dice rolls randomly generating a new number between 1 and 6.
-c. What is the lexical scope of `newRoll`? lexical scope === belonging (where was I created)
+ Everytime  you call the function the dice rolls randomly generating a new number between 1 and 6.
+c. What is the lexical scope of `newRoll`? lexical scope === belonging (where was I created), so it would be : const newRoll = Math.floor(Math.random() * 6);
+    console.log(`${name} rolled a ${newRoll}`)
 
 
 ### Task 3 - Stretch Goals
