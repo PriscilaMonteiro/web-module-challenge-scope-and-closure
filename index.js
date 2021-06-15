@@ -25,14 +25,20 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
 
 /*Task 1: counterMaker()
   
-  Study the code for counter1 and counter2, then answer the questions below. Counter 1 uses var local /counterMaker - 2 - global 
+  Study the code for counter1 and counter2, then answer the questions below. 
+  Counter 1 uses var local /counterMaker - 2 - global 
   
   1. What is the difference between counter1 and counter2?
+  counter1 is a local Variable while counter we can access anywhere in the program because it is Global.
   
-  2. Which of the two uses a closure? How can you tell? 1 - function counter inside counterMaker
+  2. Which of the two uses a closure? How can you tell? 
+  Counter1 - function counter inside counterMaker.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?  Usually it is preferable to use Local Variables as counter1 because when you contained 
+     a variable and you have more than 1 dev working on a program, you might not 
+     know what all variable names are nd you might accidently override a variable. 
+      You would prefer to use a Global Variable when you need to access the data multiple times OR when you write to an object.
 */
 
 // counter1 code
